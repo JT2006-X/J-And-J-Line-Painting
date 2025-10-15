@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>J and J Line Painting — Broward | Miami-Dade | Palm Beach</title>
+  <meta name="description" content="Professional parking lot striping, warehouse floor lines, and ADA-compliant pavement markings across Broward, Miami-Dade & Palm Beach counties.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#f6b042;
+      --dark:#06202a;
+      --muted:#667781;
+      --card:#ffffff;
+      --bg:#f4f7f8;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--dark); -webkit-font-smoothing:antialiased;}
+    .container{max-width:var(--maxw); margin:0 auto; padding:28px}
+
+    header{background:linear-gradient(180deg,rgba(6,32,42,0.03),transparent);}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#06202a;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:1px solid rgba(6,32,42,0.08);padding:8px 12px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:30px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .hero .quick{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(20,40,60,0.06)}
+    .hero .quick .item{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(6,32,42,0.04)}
+    .hero .quick .item:last-child{border-bottom:0}
+
+    section{padding:28px 0}
+    .grid{display:grid;gap:18px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(20,40,60,0.04)}
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    .areas{display:flex;gap:12px;flex-wrap:wrap}
+    .chip{background:#fff;padding:10px 12px;border-radius:999px;border:1px solid rgba(6,32,42,0.04);font-weight:600}
+
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form .full{grid-column:1/-1}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(6,32,42,0.08);font-size:14px}
+    button[type=submit]{grid-column:1/-1;background:var(--dark);color:#fff;padding:12px;border-radius:10px;border:0;font-weight:700}
+
+    footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(6,32,42,0.04)}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      nav{display:none}
+      .topbar{gap:12px}
+      form{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo">JJ</div>
+        <div>
+          <div style="font-weight:800">J and J Line Painting</div>
+          <div style="font-size:13px;color:var(--muted)">Broward • Miami-Dade • Palm Beach</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#areas">Service Area</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn" href="tel:+17542343309">Call (754) 234-3309</a>
+        <a class="btn secondary" href="#contact">Get a Free Quote</a>
+      </div>
+    </div>
+
+    <div class="container hero">
+      <div>
+        <h1>Professional Line Painting for South Florida’s Properties</h1>
+        <p class="muted">Parking lot striping, warehouse floor lines, and ADA-compliant pavement markings across Broward, Miami-Dade &amp; Palm Beach counties. Durable materials, accurate layout, and flexible scheduling.</p>
+        <p>
+          <a class="btn" href="#contact">Request a Free Quote</a>
+        </p>
+
+        <section id="about" style="margin-top:20px">
+          <div class="card">
+            <h3>Trusted Local Line Painting Experts</h3>
+            <p class="muted">Locally owned and operated. Fully licensed &amp; insured. Night and weekend service available to minimize disruption. ADA compliance specialists — measured and marked to current standards.</p>
+            <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+              <div class="chip">Durable Materials</div>
+              <div class="chip">Flexible Scheduling</div>
+              <div class="chip">Warranty Available</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="hero-quick quick" aria-labelledby="quick-cta">
+        <h4 id="quick-cta" style="margin:0 0 8px">Quick Info</h4>
+        <div class="item"><div>Service Area</div><div class="muted">Broward • Miami-Dade • Palm Beach</div></div>
+        <div class="item"><div>Materials</div><div class="muted">Traffic-grade paint</div></div>
+        <div class="item"><div>Hours</div><div class="muted">Night &amp; Weekend Available</div></div>
+        <div style="margin-top:12px"><a class="btn" href="#contact">Get Your Quote</a></div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services">
+      <h2>Services</h2>
+      <p class="muted">Comprehensive line painting and pavement marking solutions tailored to your property type and local code requirements.</p>
+
+      <div class="grid services">
+        <article class="card" aria-labelledby="s1">
+          <h3 id="s1">Parking Lot Striping</h3>
+          <p class="muted">Layout, re-striping, new installations, and sealcoat restoration for commercial and residential parking lots. We measure and mark ADA stalls precisely.</p>
+        </article>
+
+        <article class="card" aria-labelledby="s3">
+          <h3 id="s3">Warehouse &amp; Industrial Lines</h3>
+          <p class="muted">Safety aisles, pallet locations, loading zones, color coding, and OSHA-compliant floor markings that improve flow and safety.</p>
+        </article>
+
+        <article class="card" aria-labelledby="s4">
+          <h3 id="s4">Athletic Courts &amp; Play Areas</h3>
+          <p class="muted">Basketball, tennis, multi-use games, and playground markings done to spec with crisp, long-lasting paint.</p>
+        </article>
+
+        <article class="card" aria-labelledby="s5">
+          <h3 id="s5">ADA Compliance &amp; Handicap Stalls</h3>
+          <p class="muted">Accurate stall sizing, access aisles, and proper signage placement so your property meets local and federal requirements.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>Why Choose Us</h2>
+      <div class="grid" style="grid-template-columns:1fr 320px;align-items:start">
+        <div>
+          <div class="card">
+            <h3>Reliable • Durable • Local</h3>
+            <ul class="muted">
+              <li>Professional striping machines for clean, straight lines</li>
+              <li>Premium traffic paints for longer life</li>
+              <li>Licensed, insured, and safety-trained crews</li>
+              <li>Flexible scheduling (nights &amp; weekends) to reduce downtime</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h4>Typical Projects</h4>
+          <p class="muted">Shopping centers, office parks, schools, HOAs, municipalities, warehouses, and private estates.</p>
+          <h4 style="margin-top:12px">Service Warranty</h4>
+          <p class="muted">We stand behind our workmanship. Ask about our standard durability warranty and maintenance plans.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="areas">
+      <h2>Service Area</h2>
+      <p class="muted">We proudly serve all of South Florida — with particular focus on the following cities and communities:</p>
+      <div class="areas" style="margin-top:12px">
+        <div class="chip">Fort Lauderdale (Broward)</div>
+        <div class="chip">Hollywood (Broward)</div>
+        <div class="chip">Pembroke Pines (Broward)</div>
+        <div class="chip">Coral Springs (Broward)</div>
+        <div class="chip">Miami (Miami-Dade)</div>
+        <div class="chip">Hialeah (Miami-Dade)</div>
+        <div class="chip">Doral (Miami-Dade)</div>
+        <div class="chip">West Palm Beach (Palm Beach)</div>
+        <div class="chip">Boca Raton (Palm Beach)</div>
+        <div class="chip">Delray Beach (Palm Beach)</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us — Get a Free Quote</h2>
+      <p class="muted">Fill out the form or call us directly. We’ll respond within one business day.</p>
+
+      <div class="card" style="margin-top:12px">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <input name="name" id="name" placeholder="Full name" required>
+          <input name="phone" id="phone" placeholder="Phone number" required>
+          <input name="email" id="email" placeholder="Email address" type="email" required>
+          <select name="service" id="service" aria-label="Service needed">
+            <option value="">Service needed…</option>
+            <option>Parking Lot Striping</option>
+            <option>Warehouse Lines</option>
+            <option>Athletic Courts</option>
+            <option>ADA Compliance</option>
+          </select>
+          <textarea name="message" id="message" rows="5" placeholder="Project details — location, size, timing"></textarea>
+          <button type="submit">Request a Free Quote</button>
+          <p class="muted" style="font-size:13px;margin-top:10px">Or call us: <a href="tel:+17542343309">(754) 234-3309</a> • Email: <a href="mailto:jandjlinepainting@gmail.com">jandjlinepainting@gmail.com</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700">J and J Line Painting</div>
+        <div class="muted" style="margin-top:6px">Serving Broward, Miami-Dade &amp; Palm Beach • Licensed &amp; Insured</div>
+      </div>
+
+      <div style="text-align:right">
+        <div class="muted">© <span id="year"></span> J and J Line Painting. All rights reserved.</div>
+        <div style="margin-top:6px"><a href="#contact">Request a Quote</a> • <a href="#services">Services</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value.trim();
+
+      if(!name || !phone || !email){
+        alert('Please fill name, phone, and email.');
+        return false;
+      }
+
+      const subject = encodeURIComponent('Line Painting Quote Request — ' + (service || 'General'));
+      const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:jandjlinepainting@gmail.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
